@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JKSlider" customModule="RentCar" customModuleProvider="target">
+            <connections>
+                <outlet property="slider" destination="qvb-U7-kyS" id="Cc6-kJ-nT3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYq-SS-1Ue">
+                    <rect key="frame" x="0.0" y="8" width="600" height="17"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="日租" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="20" translatesAutoresizingMaskIntoConstraints="NO" id="wcJ-AT-d94">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="时租" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="20" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-8p-0bj">
+                            <rect key="frame" x="150" y="0.0" width="150" height="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="长租" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="20" translatesAutoresizingMaskIntoConstraints="NO" id="73C-lL-5y9">
+                            <rect key="frame" x="300" y="0.0" width="150" height="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="试驾" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="20" translatesAutoresizingMaskIntoConstraints="NO" id="suu-rD-ZIw">
+                            <rect key="frame" x="450" y="0.0" width="150" height="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wcJ-AT-d94" firstAttribute="width" secondItem="EqZ-8p-0bj" secondAttribute="width" id="Iyj-OG-EZk"/>
+                        <constraint firstItem="wcJ-AT-d94" firstAttribute="leading" secondItem="YYq-SS-1Ue" secondAttribute="leading" id="TK4-97-6il"/>
+                        <constraint firstAttribute="height" constant="17" id="W3h-KC-qg1"/>
+                        <constraint firstItem="73C-lL-5y9" firstAttribute="width" secondItem="suu-rD-ZIw" secondAttribute="width" id="aVA-7J-P8x"/>
+                        <constraint firstItem="wcJ-AT-d94" firstAttribute="top" secondItem="YYq-SS-1Ue" secondAttribute="top" id="bsd-Zv-9Rh"/>
+                        <constraint firstItem="EqZ-8p-0bj" firstAttribute="width" secondItem="73C-lL-5y9" secondAttribute="width" id="fqR-Yr-l4N"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvb-U7-kyS">
+                    <rect key="frame" x="75" y="45" width="450" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="lci-t3-Fqe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qvb-U7-kyS" firstAttribute="trailing" secondItem="suu-rD-ZIw" secondAttribute="centerX" id="1Wm-Gi-cSW"/>
+                <constraint firstItem="YYq-SS-1Ue" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7ON-5k-dsG"/>
+                <constraint firstItem="qvb-U7-kyS" firstAttribute="top" secondItem="YYq-SS-1Ue" secondAttribute="bottom" constant="20" id="ZCD-Vr-8Hg"/>
+                <constraint firstItem="qvb-U7-kyS" firstAttribute="leading" secondItem="wcJ-AT-d94" secondAttribute="centerX" id="Zmj-fL-TQi"/>
+                <constraint firstItem="YYq-SS-1Ue" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dey-wx-4aR"/>
+                <constraint firstAttribute="trailing" secondItem="YYq-SS-1Ue" secondAttribute="trailing" id="tHt-Tm-CSn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="423" y="119"/>
+        </view>
+    </objects>
+</document>

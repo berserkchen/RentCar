@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JKMapZoomControl" customModule="RentCar" customModuleProvider="target">
+            <connections>
+                <outlet property="zoomInButton" destination="Btw-z5-yKK" id="9Y2-DI-cEP"/>
+                <outlet property="zoomUpButton" destination="9yS-0S-6Fk" id="Q6X-JC-L5m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-0S-6Fk" userLabel="zoomUpButton">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="ic_add"/>
+                    <state key="highlighted" image="ic_add_selected"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btw-z5-yKK" userLabel="zoomInButton">
+                    <rect key="frame" x="0.0" y="40" width="40" height="40"/>
+                    <state key="normal" image="ic_remove"/>
+                    <state key="highlighted" image="ic_remove_selected"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiy-FA-yhE">
+                    <rect key="frame" x="4" y="39" width="32" height="1"/>
+                    <color key="backgroundColor" red="0.56013621794871793" green="0.55556577961652442" blue="0.54684524061804984" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dMR-mI-UVe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9yS-0S-6Fk" secondAttribute="trailing" id="62h-6B-F9y"/>
+                <constraint firstItem="9yS-0S-6Fk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="HV0-s1-eKp"/>
+                <constraint firstItem="9yS-0S-6Fk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IOm-fz-WM4"/>
+                <constraint firstItem="9yS-0S-6Fk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KSt-wg-mqk"/>
+                <constraint firstAttribute="trailing" secondItem="Btw-z5-yKK" secondAttribute="trailing" id="Vel-2p-tgc"/>
+                <constraint firstAttribute="trailing" secondItem="uiy-FA-yhE" secondAttribute="trailing" constant="4" id="WCu-h3-W6W"/>
+                <constraint firstItem="uiy-FA-yhE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hsn-bS-3Vp"/>
+                <constraint firstItem="uiy-FA-yhE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="in9-xF-fBu"/>
+                <constraint firstItem="Btw-z5-yKK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jN8-SE-opd"/>
+                <constraint firstItem="Btw-z5-yKK" firstAttribute="top" secondItem="9yS-0S-6Fk" secondAttribute="bottom" id="l4o-Yh-UIT"/>
+                <constraint firstAttribute="bottom" secondItem="Btw-z5-yKK" secondAttribute="bottom" id="xnc-YM-nnY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="801" y="563"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_add" width="24" height="24"/>
+        <image name="ic_add_selected" width="24" height="24"/>
+        <image name="ic_remove" width="24" height="24"/>
+        <image name="ic_remove_selected" width="24" height="24"/>
+    </resources>
+</document>
